@@ -1,5 +1,5 @@
-FROM centos:latest
-RUN yum install java -y
+FROM ubuntu:latest
+RUN apt-get install java -y
 RUN mkdir /opt/tomcat
 WORKDIR /opt/tomcat
 ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.71/bin/apache-tomcat-9.0.71.tar.gz .
